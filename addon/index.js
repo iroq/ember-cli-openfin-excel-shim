@@ -1,1 +1,8 @@
-export default window.fin.desktop.Excel
+var exportObject;
+try {
+    exportObject = window.fin.desktop.Excel || {};
+} catch (e) {
+    exportObject = {};
+}
+
+export default exportObject;
