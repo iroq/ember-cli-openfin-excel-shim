@@ -11,10 +11,11 @@ module.exports = {
 
   included: function(app) {
     this._super.included.apply(this, arguments);
-
+    var vendor = this.treePaths.vendor;
+    app.import(vendor + '/excel-api-openfin/ExcelAPI.js', { prepend: true });
   },
 
-  treeForVendor: function(treeForVendor) {
+  treeForVendor: function(vendorTree) {
     var trees = [];
     if (vendorTree) {
       trees.push(vendorTree);
