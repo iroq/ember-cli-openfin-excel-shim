@@ -41,7 +41,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "loader.js": "^4.0.10",
-    "excel-api-example": "openfin/excel-api-example"
+    "excel-api-example": "openfin/excel-api-example#563ef460020fd007a88bcd1b93bd2fb162146cf9"
   },
   "engines": {
     "node": ">= 0.12.0"
