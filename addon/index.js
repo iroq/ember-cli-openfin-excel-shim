@@ -1,8 +1,12 @@
-var exportObject;
-try {
-    exportObject = window.fin.desktop.Excel || {};
-} catch (e) {
-    exportObject = {};
-}
+const Excel = window.fin.desktop.Excel;
 
-export default exportObject;
+const openfinProperties = Object.keys(window.fin.desktop);
+const openfinEnabled = !(
+    openfinProperties.length === 1 &&
+    openfinProperties[0] === 'Excel'
+);
+
+export {
+    Excel as default,
+    openfinEnabled
+};
