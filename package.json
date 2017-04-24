@@ -1,17 +1,17 @@
 {
   "name": "ember-cli-openfin-excel-shim",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "An Ember CLI shim importing the OpenFin Excel API",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "iroq",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/iroq/ember-cli-openfin-excel-shim",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
