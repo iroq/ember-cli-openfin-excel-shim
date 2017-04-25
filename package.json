@@ -18,7 +18,8 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "ember-cli-babel": "^5.1.7",
+    "excel-api-example": "openfin/excel-api-example#563ef460020fd007a88bcd1b93bd2fb162146cf9"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -40,8 +41,7 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.10",
-    "excel-api-example": "openfin/excel-api-example#563ef460020fd007a88bcd1b93bd2fb162146cf9"
+    "loader.js": "^4.0.10"
   },
   "engines": {
     "node": ">= 0.12.0"
