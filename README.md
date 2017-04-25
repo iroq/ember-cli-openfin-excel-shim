@@ -1,5 +1,7 @@
 # ember-cli-openfin-excel-shim
 
+[![Build Status](https://travis-ci.org/iroq/ember-cli-openfin-excel-shim.svg?branch=master)](https://travis-ci.org/iroq/ember-cli-openfin-excel-shim)
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
