@@ -1,1 +1,21 @@
-{{outlet}}
+{{! copied from https://github.com/openfin/excel-api-example/blob/369ef52e81883c193951ec5fd7f829dd7de9d6dc/index.html }}
+
+<div id="intro">
+  <div class="introHeader">Welcome to Openfin&trade; Excel demo.</div>
+  <div class="introDescription">The purpose of this demo is to demonstrate Openfin's capabilities for communicating with Excel. </div>
+</div>
+
+<div id="noWorkbooks">No Workbooks found. Start with creating <a href="#" class="newWorkbook" onclick="fin.desktop.Excel.addWorkbook()"> New Workbook. </a> </div>
+
+<div id="workbooksContainer">
+
+  <div id="workbookTabs"><button class="workbookTab" title="New workbook (ctr+N)" id="newWorkbookButton">New</button></div>
+  <div class="greenBar"></div>
+  <div id="formulaInput">Formula: </div>
+  <table id="excelExample" cellspacing="0" cellpadding="2">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+  <div id="sheets"><button id="newSheetButton" title="New sheet" class="tab">New</button></div>
+</div>
+<div id="status">Excel not connected</div>
