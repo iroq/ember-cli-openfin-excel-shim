@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
-    "excel-api-example": "openfin/excel-api-example#369ef52e81883c193951ec5fd7f829dd7de9d6dc"
+    "excel-api-example": "openfin/excel-api-example#a35edf38eca7af80e29c21a93c5f5e2ae36c8dce"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
