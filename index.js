@@ -12,7 +12,7 @@ module.exports = {
   included: function(app) {
     this._super.included.apply(this, arguments);
     var vendor = this.treePaths.vendor;
-    app.import(vendor + '/excel-api-openfin/ExcelAPI.js', { prepend: true });
+    app.import(vendor + '/excel-api-openfin/fin.desktop.Excel.js', { prepend: true });
   },
 
   treeForVendor: function(vendorTree) {
@@ -20,11 +20,10 @@ module.exports = {
     if (vendorTree) {
       trees.push(vendorTree);
     }
-    var nmp = path.join(__dirname, 'node_modules');
-    var excelExamplePath = path.dirname(require.resolve('excel-api-example'));
+    var excelExamplePath = 'node_modules/excel-api-example/plugin';
     trees.push(new Funnel(excelExamplePath, {
       destDir: 'excel-api-openfin',
-      include: ['ExcelAPI.js'],
+      include: ['fin.desktop.Excel.js'],
     }));
     return mergeTrees(trees);
   }
